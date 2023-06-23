@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   post "/users" => "users#create"
   post "/login" => "session#login"
   post "/groups" => "groups#create"
-  put "/groups/:id" => "group#assign_user"
+  put "/groups/:id" => "groups#assign_user_to_group"
 end
